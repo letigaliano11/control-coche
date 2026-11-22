@@ -5,8 +5,6 @@ Aplicación web (PWA) de una sola página para llevar anotaciones sobre tu coche
 ## Archivos
 
 - `index.html`: la aplicación completa (HTML, CSS y JavaScript).
-- `manifest.json`: datos de instalación como app (nombre, iconos, atajos).
-- `icon-512.png` (y demás iconos): iconos de la app y pantalla de bienvenida.
 
 ## Cómo cambiar el nombre de la app
 
@@ -34,7 +32,7 @@ La sigla **LDL** (de la versión original) se repite en cuatro sitios. Si quiere
 | `<img src="icon-512.png" alt="LDL">` | Texto alternativo de la pantalla de bienvenida |
 | `<h1>LDL</h1>` | Título grande en la cabecera |
 
-Con un buscar y reemplazar de `LDL` por tu nombre corto basta (ojo: no toques `ldl_parking`, ver el punto 4).
+Con un buscar y reemplazar de `LDL` por tu nombre corto basta (ojo: no toques `ldl_parking`).
 
 ### 3. Nombre al instalar la app (`manifest.json`)
 
@@ -50,9 +48,7 @@ Cambia los campos `name` y `short_name`:
 - `name`: nombre completo, aparece en la pantalla de instalación.
 - `short_name`: nombre que aparece bajo el icono en la pantalla de inicio (mejor que sea corto, unos 12 caracteres).
 
-Si ya tenías la app instalada en el móvil, desinstálala y vuelve a instalarla para que se actualice el nombre.
 
-### 4. Datos guardados (opcional, no recomendado)
 
 La app guarda la ubicación del aparcamiento en el navegador con la clave `ldl_parking` (constante `PK` en el JavaScript). **No hace falta cambiarla** al renombrar la app. Si la cambias, se perderá cualquier ubicación guardada previamente.
 
